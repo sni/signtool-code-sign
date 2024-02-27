@@ -52,14 +52,14 @@ Based on:
 
     runs-on: windows-latest
     steps:
-      uses: sni/signtool-code-sign@main
+      uses: sni/signtool-code-sign@v1.0
       with:
         certificate: '${{ secrets.CERTIFICATE }}'
         cert-password: '${{ secrets.PASSWORD }}'
         cert-sha1: '${{ secrets.CERTHASH }}'
         cert-description: 'foo'
-        folder: 'path/to/folder'
-        recursive: true
+        folder: "./"
+        recursive: false
         timestamp-server: 'http://timestamp.digicert.com'
 
 ## License
