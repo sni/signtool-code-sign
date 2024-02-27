@@ -46,7 +46,7 @@ const supportedFileExt = [
  */
 function validateInputs(): boolean {
 	if (coreFolder.length === 0) {
-		core.error('foler input must have a value.')
+		core.error('folder input must have a value.')
 		return false
 	}
 

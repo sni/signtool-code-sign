@@ -1,6 +1,6 @@
-name: 'Signtool Code Sign (Reloaded)'
+name: 'Signtool Code Sign'
 description: 'Sign files with with a pfx certificate using signtool'
-author: 'Gabriel Acosta/Minionguyjpro'
+author: 'Gabriel Acosta/Minionguyjpro/Sven Nierlein'
 branding:
   icon: 'code'
   color: 'gray-dark'
@@ -29,5 +29,5 @@ inputs:
     default: 'http://timestamp.verisign.com/scripts/timstamp.dll'
     required: false
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/index.js'
